@@ -163,7 +163,7 @@ img {
   
   .supervisor {
     width: 16.2rem;
-    margin: 0 0 2.3rem 3rem;
+    margin: 0 0 2.3rem 0;
   }
   .team {
     width: 16.2rem;
@@ -175,7 +175,7 @@ img {
   }
   .calculator {
     width: 16.2rem;
-    margin:0 0 3rem 3rem;
+    margin:0 0 3rem 0;
   }
   .attribution {
     font-size: 15px;
