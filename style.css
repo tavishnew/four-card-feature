@@ -147,7 +147,8 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 375px) {
+
+@media only screen and (max-width: 760px) {
   .head h1 {
     font-size: 1.5rem;
   }
@@ -163,7 +164,7 @@ img {
   
   .supervisor {
     width: 16.2rem;
-    margin: 0 0 2.3rem 3rem;
+    margin: 0 0 2.3rem 8rem;
   }
   .team {
     width: 16.2rem;
@@ -175,7 +176,7 @@ img {
   }
   .calculator {
     width: 16.2rem;
-    margin:0 0 3rem 3rem;
+    margin:0 0 3rem 8rem;
   }
   .attribution {
     font-size: 15px;
