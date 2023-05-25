@@ -174,7 +174,7 @@ img {
   }
   .calculator {
     width: 16rem;
-    margin:0 0 3rem 3rem;
+    margin:0 3rem 3rem 0;
   }
   .attribution {
     font-size: 15px;
