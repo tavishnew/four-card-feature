@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem auto;
+  margin: 2rem auto;
   text-align: center;
   color: var(--VeryDarkBlue);
 }
@@ -60,12 +60,18 @@ body::-webkit-scrollbar {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   column-gap: 40px;
   width: 100%;
-  max-width: 70rem;
+  height: 60%;
   margin: 0 auto;
   color: var(--VeryDarkBlue);
+}
+.column{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  place-self: center;
 }
 
 .cards p {
@@ -77,15 +83,14 @@ body::-webkit-scrollbar {
 
 .supervisor,
 .calculator {
-  position: relative;
   border-top-style: solid;
   border-top-width: 7px;
   border-radius: 8px;
   box-shadow: 6px 18px 63px -9px rgba(0, 0, 0, 0.3);
 }
 .team {
-  height: 60%;
-  position: relative;
+  width: 20rem;
+  height: 12rem;
   border-top-style: solid;
   border-top-width: 7px;
   border-radius: 8px;
@@ -95,32 +100,33 @@ body::-webkit-scrollbar {
 }
 
 .karma {
-  height: 60%;
-  position: relative;
+  width: 20rem;
+  height: 12rem;
   border-top-style: solid;
   border-top-width: 7px;
   border-radius: 8px;
   border-color: var(--Orange);
   box-shadow: 6px 18px 63px -9px rgba(0, 0, 0, 0.3);
   padding: 15px;
-  margin-bottom: 1rem;
-  left: -24.2rem;
-  top: 17rem;
+  margin-bottom: 3.5rem;
 }
 
 .supervisor {
-  margin-top: 10rem;
   border-color: var(--Cyan);
   padding: 15px;
-  height: 55%;
+  max-height: 13rem;
+  max-width: 30rem;
+  margin-top: 7rem;
+  margin-left: 4rem;
 }
 
 .calculator {
   border-color: var(--Blue);
   padding: 15px;
-  left: 49rem;
-  top: -11.45rem;
-  height: 100%;
+  max-height: 13rem;
+  max-width: 30rem;
+  margin-top: 7rem;
+  margin-right: 4rem;
 }
 
 img {
@@ -149,35 +155,34 @@ img {
     word-spacing: -0.1rem;
   }
   .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    margin: 0;
-    min-height: 5rem;
-    max-width: 25rem;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    place-self: center;
+    align-items: center;
   }
+  
   .supervisor {
-    margin: 0 auto;
-    left: 4rem;
-    width: 80%;
+    width: 16rem;
+    margin-top: 0;
+    margin-bottom: 2.3rem;
+    margin-left: 9rem;
   }
   .team {
-    position: relative;
-    top: -1rem;
-    left: 6.4rem;
-    height: 30%;
-    width: 80.9%;
+    width: 16.5rem;
+    margin-left: 2.5rem;
   }
   .karma {
-    left: 6.4rem;
-    top: -1.9rem;
-    width: 81%;
+    width: 16.7rem;
+    margin: 0;
+    margin-left: 2.5rem;
+    margin-bottom: 2.3rem;
   }
   .calculator {
-    left: 6.4rem;
-    top: -2.2rem;
-    width: 81%;
-    margin-bottom: 2rem;
+    width: 16rem;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left:9rem;
+    margin-bottom: 3rem;
   }
   .attribution {
     font-size: 15px;
