@@ -147,7 +147,7 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 375px) {
   .head h1 {
     font-size: 1.5rem;
   }
