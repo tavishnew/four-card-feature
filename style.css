@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  background-color: var(--VeryLightGray);
+}
+
+.upper-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  color: var(--VeryDarkBlue);
+}
+
+.head h1 {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+}
+
+.head .light {
+  font-weight: 200;
+}
+
+.bold {
+  margin-bottom: 10px;
+}
+
+.head p {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 25px;
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  color: var(--VeryDarkBlue);
+}
+
+.cards p {
+  font-weight: 400;
+  color: var(--GrayishBlue);
+  font-size: 14px;
+  line-height: 1.4rem;
+}
+
+.supervisor,
+.calculator {
+  position: relative;
+  border-top-style: solid;
+  border-top-width: 7px;
+  border-radius: 8px;
+  box-shadow: 6px 18px 63px -9px rgba(0, 0, 0, 0.3);
+}
+.team {
+  height: 60%;
+  position: relative;
+  top: 1rem;
+  border-top-style: solid;
+  border-top-width: 7px;
+  border-radius: 8px;
+  border-color: var(--Red);
+  box-shadow: 6px 18px 63px -9px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+
+.karma {
+  height: 60%;
+  position: relative;
+  border-top-style: solid;
+  border-top-width: 7px;
+  border-radius: 8px;
+  border-color: var(--Orange);
+  box-shadow: 6px 18px 63px -9px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  margin-bottom: 1rem;
+  left: -24.2rem;
+  top: 17rem;
+}
+
+.supervisor {
+  margin-top: 10rem;
+  border-color: var(--Cyan);
+  padding: 15px;
+  height: 55%;
+}
+
+.calculator {
+  border-color: var(--Blue);
+  padding: 15px;
+  left: 49rem;
+  top: -11.45rem;
+  height: 100%;
+}
+
+img {
+  position: static;
+  height: 3rem;
+  margin-left: 80%;
+  margin-top: 7%;
+}
+
+.attribution {
+  font-size: 17px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 760px) {
+  .head h1 {
+    font-size: 1.5rem;
+  }
+  .head p {
+    word-spacing: -0.1rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 0;
+    min-height: 5rem;
+    max-width: 25rem;
+  }
+  .supervisor {
+    margin: 0 auto;
+    left: 4rem;
+    width: 80%;
+  }
+  .team {
+    position: relative;
+    top: -1rem;
+    left: 6.4rem;
+    height: 30%;
+    width: 80.9%;
+  }
+  .karma {
+    left: 6.4rem;
+    top: -1.9rem;
+    width: 81%;
+  }
+  .calculator {
+    left: 6.4rem;
+    top: -2.2rem;
+    width: 81%;
+    margin-bottom: 2rem;
+  }
+  .attribution {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
