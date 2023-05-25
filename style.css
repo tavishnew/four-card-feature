@@ -152,7 +152,8 @@ img {
     font-size: 1.5rem;
   }
   .head p {
-    word-spacing: -0.5rem;
+    word-spacing: -0.1rem;
+    width: 100%;
   }
   .cards {
     display:grid;
