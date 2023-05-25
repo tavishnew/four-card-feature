@@ -176,9 +176,7 @@ img {
   }
   .calculator {
     width: 16rem;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 3rem;
+    margin:0 0 3rem 3rem;
   }
   .attribution {
     font-size: 15px;
